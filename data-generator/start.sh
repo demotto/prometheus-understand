@@ -1,0 +1,1 @@
+docker run -d -p 9527:9527 172.17.198.145:5000/data-generator

@@ -1,1 +1,1 @@
-docker run -d --name grafana -p 3000:3000 grafana/grafana:5.1.2
+docker run - --name grafana -p 3000:3000 grafana/grafana:5.1.2d

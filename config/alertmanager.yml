@@ -3,7 +3,6 @@ global:
   smtp_from: '135XXX651@139.com'
   smtp_auth_username: '139XXX7651@139.com'
   smtp_auth_password: 'XX自己的密码XXX'
-
 route:
   receiver: team-test-mails 
   group_by: ['alertname']

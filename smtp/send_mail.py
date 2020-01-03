@@ -17,7 +17,7 @@ message['Subject'] = Header(subject, 'utf-8')
 
 try:
     smtpObj = smtplib.SMTP(host='localhost', port=10025)
-    smtpObj.sendmail(None, receivers, message.as_string())
+    smtpObj.sendmail("xxx@xxx.com", receivers, message.as_string())
     print("邮件发送成功")
 except smtplib.SMTPException:
     print("Error: 无法发送邮件")

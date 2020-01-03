@@ -1,1 +1,1 @@
-docker run - --name grafana -p 3000:3000 grafana/grafana:5.1.2d
+docker run -d -p 9527:9527 172.17.198.145:5000/data-generator

@@ -1,3 +1,7 @@
 BASE_DIR=$(cd `dirname $0`/..; pwd)
 CONFIG=${BASE_DIR}/config/prometheus.yml
-docker run -d -p 9090:9090 -v ${CONFIG}:/etc/prometheus/prometheus.yml prom/prometheus:latest
+ALERT_RULES=${BASE_DIR}/config/alertmanager_rules.yml
+docker run -d -p 9090:9090 \
+-v ${CONFIG}:/etc/prometheus/prometheus.yml \
+-v ${ALERT_RULES}:/etc/prometheus/alertmanager_rules.yml \
+prom/prometheus:latest

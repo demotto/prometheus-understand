@@ -1,8 +1,8 @@
 global:
-  smtp_smarthost: 'smtp.139.com:465'   # 139发件服务器 ，同理也可设置qq企业，163邮箱等
-  smtp_from: '135XXX651@139.com'
-  smtp_auth_username: '139XXX7651@139.com'
-  smtp_auth_password: 'XX自己的密码XXX'
+  smtp_smarthost: 'smtp.163.com'   # 139发件服务器 ，同理也可设置qq企业，163邮箱等
+  smtp_from: 'huyifan_zju@163.com'
+  smtp_auth_username: 'huyifan_zju@163.com'
+  smtp_auth_password: '123456'
 route:
   receiver: team-test-mails 
   group_by: ['alertname']
@@ -15,4 +15,4 @@ route:
 receivers:
   - name: 'team-test-mails'
     email_configs:
-    - to: '13475639563@163.com'
+    - to: 'demotto@zju.edu.cn'

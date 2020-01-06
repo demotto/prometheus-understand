@@ -9,4 +9,3 @@ groups:
      annotations: # 解析项，详细解释告警信息
       summary: "{{$labels.instance}}: has been down"
       description: "{{$labels.instance}}: job {{$labels.job}} has been down "
-      value: {{$value}}

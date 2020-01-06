@@ -11,7 +11,7 @@ def sentemail():
     # 设置发件服务器端口号。注意，这里有SSL和非SSL两种形式，现在一般是SSL方式
     sender = 'huyifan_zju@163.com'
     # 设置发件邮箱，一定要自己注册的邮箱
-    pwd = 'xxxxxx'
+    pwd = 'hyf954731'
     # 设置发件邮箱的授权码密码，根据163邮箱提示，登录第三方邮件客户端需要授权码
     receiver = 'demotto@zju.edu.cn'
     # 设置邮件接收人，可以是QQ邮箱
@@ -19,7 +19,7 @@ def sentemail():
     # 设置邮件正文，这里是支持HTML的
     msg = MIMEText(body, 'html')
     # 设置正文为符合邮件格式的HTML内容
-    msg['subject'] = '打卡通知'
+    msg['subject'] = '打你妹通知'
     # 设置邮件标题
     msg['from'] = sender
     # 设置发送人

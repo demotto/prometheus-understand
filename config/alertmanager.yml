@@ -1,18 +1,18 @@
 global:
-  smtp_smarthost: 'smtp.163.com'   # 139发件服务器 ，同理也可设置qq企业，163邮箱等
-  smtp_from: 'huyifan_zju@163.com'
-  smtp_auth_username: 'huyifan_zju@163.com'
-  smtp_auth_password: '123456'
+  resolve_timeout: 5m
+ smtp_smarthost: 'smtp.163.com'   # 139发件服务器 ，同理也可设置qq企业，163邮箱等
+ smtp_from: 'huyifan_zju@163.com'
+ smtp_auth_username: 'huyifan_zju@163.com'
+ smtp_auth_password: '123456'
+
 route:
-  receiver: team-test-mails 
-  group_by: ['alertname']
-  group_wait: 30s
-  group_interval: 1m
-  repeat_interval: 2m
-  - match:
-      severity: error
-   
+  receiver: team-test-mails 
+  group_by: ['alertname']
+  group_wait: 30s
+  group_interval: 1m
+  repeat_interval: 2m
+
 receivers:
-  - name: 'team-test-mails'
-    email_configs:
-    - to: 'demotto@zju.edu.cn'
+- name: 'team-test-mails'
+ email_configs:
+ - to: 'demotto@zju.edu.cn'

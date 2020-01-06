@@ -7,7 +7,7 @@ from time import sleep
 def sentemail():
     host = 'smtp.163.com'
     # 设置发件服务器地址
-    port = 465
+    port = 25
     # 设置发件服务器端口号。注意，这里有SSL和非SSL两种形式，现在一般是SSL方式
     sender = 'huyifan_zju@163.com'
     # 设置发件邮箱，一定要自己注册的邮箱

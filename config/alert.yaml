@@ -19,7 +19,7 @@ receivers:
 - name: 'team-test-mails'
   email_configs:
   - to: 'demotto@zju.edu.cn'
-    html: '测试 {{ .alerts }}' # 设定邮箱的内容模板
+    html: '测试 {{ .Alerts }}' # 设定邮箱的内容模板
     headers: { Subject: "[WARN] 报警邮件 {{ .alerts }}"} # 接收邮件的标题
 inhibit_rules:
   - source_match:

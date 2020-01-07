@@ -26,4 +26,4 @@ class Kubernetes:
 
 k = Kubernetes()
 #print(k.ListNameSpace())
-print(k.ListPods())
+print(k.ListPods('kubeflow'))

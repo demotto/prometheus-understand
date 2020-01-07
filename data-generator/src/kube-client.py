@@ -17,5 +17,13 @@ class Kubernetes:
     body.metadata = client.V1ObjectMeta(name=name)
     return self.Connect.create_namespace(body=body)
 
+  def ListPods(self, ns):
+    data = []
+    for pod in self.Connect.list_namespaced_pod(namespace=ns).items:
+      data.append(pod)
+    return data
+
+
 k = Kubernetes()
-print(k.ListNameSpace())
+#print(k.ListNameSpace())
+print(k.ListPods())
